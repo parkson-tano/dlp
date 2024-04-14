@@ -1,11 +1,52 @@
+// import React from "react"
+'use client'
 import Image from "next/image";
+import ModalForm from "./components/Modal";
+import { SocialIcon } from 'react-social-icons'
+
 
 export default function Home() {
+
+  const whatYouWillLearn = [
+    {
+      title: "Deep Fundamentals",
+      description: "Gain a comprehensive understanding of cryptocurrency fundamentals, including blockchain technology, history, and financial implications.",
+    },
+    {
+      title: "Identifying Promising Coins",
+      description: "Learn strategies for identifying cryptocurrencies with strong growth potential based on factors like technology, team, and market demand.",
+    },
+    {
+      title: "Mastering Entry and Exit Points",
+      description: "Understand how to identify optimal entry and exit points for trades using technical analysis techniques and indicators.",
+    },
+    {
+      title: "Discovering Gems",
+      description: "Explore emerging cryptocurrencies with disruptive technologies and strong fundamentals that have the potential to outperform popular assets.",
+    },
+    {
+      title: 'Trading Strategies',
+      description: 'Learn various trading strategies used in cryptocurrency markets, from day trading to long-term investing.'
+    },
+    {
+      title: 'Risk Management',
+      description: 'Understand the importance of risk management in cryptocurrency trading and how to mitigate potential losses.'
+    }
+  ];
+
   return (
-    <main className="flex min-h-screen flex-col justify-between bg-white ">
+
+    <main className="flex flex-col justify-between min-h-screen bg-white">
+
+      {/* <Button onClick={open}>Open modal</Button> */}
       <header className="bg-gray-900 text-white py-12">
         <div className="container mx-auto text-center">
-          <h1 className="text-3xl font-bold mb-4">Unlock the Power of Crypto with Our Exclusive Spreadsheets!</h1>
+          <h1 className="text-3xl font-bold mb-2">
+            Position to 🔑 Unlock that success in crypto on the day of halving with 100X TO 5000X GEMS
+          </h1>
+          <h1 className="text-3xl font-bold mb-4">
+            NYCE AYUK!
+          </h1>
           <p className="text-lg mb-8">Gain Access to Strategies that Could Skyrocket Your Earnings!</p>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">
             Explore Now
@@ -13,10 +54,9 @@ export default function Home() {
         </div>
       </header>
 
-
       <section className="bg-gray-100 py-5 flex justify-center items-center">
         <Image
-          className="relative z-10 rounded-10"
+          className="relative rounded-10"
           src="/crypto_course.jpeg"
           alt="Next.js Logo"
           width={1000}
@@ -25,32 +65,34 @@ export default function Home() {
         />
       </section>
 
-
+      <SocialIcon url="www.vimeo.com" />
       <section className="bg-gray-100 px-5 mb-5 text-slate-900">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8">What You Will Learn</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-4 text-center"> Introduction to Cryptocurrency</h3>
-              <p className="text-gray-700">Gain foundational knowledge about cryptocurrency, including its history, technology, and significance in the financial world.</p>
-            </div>
-            <div className="bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-4 text-center">Trading Strategies</h3>
-              <p className="text-gray-700">Learn various trading strategies used in cryptocurrency markets, from day trading to long-term investing.</p>
-            </div>
-            <div className="bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-4 text-center"> Risk Management</h3>
-              <p className="text-gray-700">Understand the importance of risk management in cryptocurrency trading and how to mitigate potential losses.</p>
-            </div>
-            <div className=" bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-bold mb-4 text-center">Advanced Techniques</h3>
-              <p className="text-gray-700">Explore advanced trading techniques, such as technical analysis, chart patterns, and algorithmic trading.</p>
-            </div>
+            {
+              whatYouWillLearn.map((item, index) => (
+                <div className="bg-red rounded-lg shadow-md px-5" key={index}>
+                  <h3 className="text-xl font-bold mb-4 text-center">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-700">
+                    {item.description}
+                  </p>
+                </div>
+              ))
+            }
+
           </div>
         </div>
       </section>
+      <div className="telegram-icon">
+        <SocialIcon url="www.telegram.com" href="https://t.me/bullruncameroon" />
+      </div>
 
-
+      <div className="whatsapp-icon">
+        <SocialIcon url="www.whatsapp.com" href="https://chat.whatsapp.com/HwIOJfwNg8C4LM6luQ5OHk" />
+      </div>
       <div className="container mx-auto">
         <div className="flex flex-col lg:mb-0 lg:w-full lg:max-w-5xl lg:flex-row lg:flex-wrap">
 
@@ -97,56 +139,17 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="flex justify-center  mb-5 items-center bg-gray-200">
-        <div className="max-w-lg w-full px-6  bg-white rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold mb-4 text-center">Register for the Event</h2>
-          <form className="space-y-4">
-            <div>
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your name"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              />
-            </div>
-            <div>
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              />
-            </div>
-            <div>
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phone">
-                Phone Number
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Enter your phone number"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            >
-              Register
-            </button>
-          </form>
-        </div>
-      </section>
+      <ModalForm />
+      <a
+        href="https://wa.link/vu05u6"
+        className="float"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <i className="fab fa-whatsapp my-float"></i>
+      </a>
 
     </main>
+
   );
 }
