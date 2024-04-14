@@ -32,7 +32,7 @@ function ModalForm() {
                         )
                     }
 
-                    <form className="space-y-4">
+                    <div className="space-y-4">
                         <div>
                             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
                                 Name
@@ -84,7 +84,7 @@ function ModalForm() {
                         >
                             Register
                         </button>
-                    </form>
+                    </div>
                 </div>
             </section>
         </MantineProvider>

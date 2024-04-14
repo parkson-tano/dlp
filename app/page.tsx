@@ -46,7 +46,7 @@ export default function Home() {
             Position to 🔑 Unlock that success in crypto on the day of halving with 100X TO 5000X GEMS
           </h1>
 
-          <h1 className="bg-gradient-to-r from-green-400 to-red-500 text-transparent bg-clip-text text-3xl font-bold">
+          <h1 className="text-red-300 bg-clip-text text-3xl font-bold ">
             NYCE AYUK!
           </h1>
           <p className="text-lg mb-8">Gain Access to Strategies that Could Skyrocket Your Earnings!</p>
@@ -88,11 +88,13 @@ export default function Home() {
         </div>
       </section>
       <div className="telegram-icon">
-        <SocialIcon url="www.telegram.com" href="https://t.me/bullruncameroon" />
+        <SocialIcon url="www.telegram.com" href="https://t.me/bullruncameroon" target="_blank"
+          rel="noreferrer" />
       </div>
 
       <div className="whatsapp-icon">
-        <SocialIcon url="www.whatsapp.com" href="https://chat.whatsapp.com/HwIOJfwNg8C4LM6luQ5OHk" />
+        <SocialIcon url="www.whatsapp.com" href="https://chat.whatsapp.com/HwIOJfwNg8C4LM6luQ5OHk" target="_blank"
+          rel="noreferrer" />
       </div>
       <div className="container mx-auto">
         <div className="flex flex-col lg:mb-0 lg:w-full lg:max-w-5xl lg:flex-row lg:flex-wrap">
@@ -143,15 +145,6 @@ export default function Home() {
 
         <ModalForm />
       </div>
-
-      <a
-        href="https://wa.link/vu05u6"
-        className="float"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <i className="fab fa-whatsapp my-float"></i>
-      </a>
 
     </main>
 
