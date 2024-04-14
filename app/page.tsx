@@ -50,7 +50,7 @@ export default function Home() {
             NYCE AYUK!
           </div>
           <p className="text-lg mb-8">Gain Access to Strategies that Could Skyrocket Your Earnings!</p>
-          <a href="#reg" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">
+          <a href="#reg" className="bg-gradient-to-r from-blue-400 to-red-500  hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">
             Explore Now
           </a>
         </div>
