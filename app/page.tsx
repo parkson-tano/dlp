@@ -145,6 +145,12 @@ export default function Home() {
 
         <ModalForm />
       </div>
+      <footer className="bg-gray-800 text-gray-300 py-4 px-6 flex justify-between items-center">
+    <div className="flex space-x-4">
+      
+    </div>
+    <div>&copy; 2024 Your Company. All Rights Reserved.</div>
+</footer>
 
     </main>
 
