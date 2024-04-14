@@ -72,7 +72,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {
               whatYouWillLearn.map((item, index) => (
-                <div className="bg-red rounded-lg shadow-md px-5" key={index}>
+                <div className="bg-red rounded-lg shadow-md px-5 py-6" key={index}>
                   <h3 className="text-xl font-bold mb-4 text-center">
                     {item.title}
                   </h3>
