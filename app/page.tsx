@@ -87,7 +87,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <p className="text-2xl font-bold text-center mb-8 text-slate-900">
+      {/* <p className="text-2xl font-bold text-center mb-8 text-slate-900">
           Find us on
           </p>
       <div className="flex space-x-4 mx-auto text-center mb-5">
@@ -101,7 +101,7 @@ export default function Home() {
             rel="noreferrer" />
           <SocialIcon url="www.x.com" href="https://twitter.com/WainkemD" target="_blank"
             rel="noreferrer" />
-        </div>
+        </div> */}
       <div className="telegram-icon">
         <SocialIcon url="www.telegram.com" href="https://t.me/bullruncameroon" target="_blank"
           rel="noreferrer" />
@@ -161,7 +161,7 @@ export default function Home() {
         <ModalForm />
       </div>
       <footer className="bg-gray-800 text-gray-300 py-4 px-10 flex justify-between items-center">
-        <div className="flex space-x-4">
+        {/* <div className="flex space-x-4">
           <SocialIcon url="www.whatsapp.com" href="https://chat.whatsapp.com/HwIOJfwNg8C4LM6luQ5OHk" target="_blank"
             rel="noreferrer" />
           <SocialIcon url="www.telegram.com" href="https://t.me/bullruncameroon" target="_blank"
@@ -172,7 +172,7 @@ export default function Home() {
             rel="noreferrer" />
           <SocialIcon url="www.x.com" href="https://twitter.com/WainkemD" target="_blank"
             rel="noreferrer" />
-        </div>
+        </div> */}
         <div>&copy; 2024 Digital Life Prince. All Rights Reserved.</div>
       </footer>
 
