@@ -87,6 +87,21 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <p className="text-2xl font-bold text-center mb-8 text-slate-900">
+          Find us on
+          </p>
+      <div className="flex space-x-4 mx-auto text-center mb-5">
+          <SocialIcon url="www.whatsapp.com" href="https://chat.whatsapp.com/HwIOJfwNg8C4LM6luQ5OHk" target="_blank"
+            rel="noreferrer" />
+          <SocialIcon url="www.telegram.com" href="https://t.me/bullruncameroon" target="_blank"
+            rel="noreferrer" />
+          <SocialIcon url="www.instagram.com" target="_blank"
+            rel="noreferrer" />
+          <SocialIcon url="www.facebook.com" target="_blank"
+            rel="noreferrer" />
+          <SocialIcon url="www.x.com" href="https://twitter.com/WainkemD" target="_blank"
+            rel="noreferrer" />
+        </div>
       <div className="telegram-icon">
         <SocialIcon url="www.telegram.com" href="https://t.me/bullruncameroon" target="_blank"
           rel="noreferrer" />
@@ -99,7 +114,7 @@ export default function Home() {
       <div className="container mx-auto">
         <div className="flex flex-col lg:mb-0 lg:w-full lg:max-w-5xl lg:flex-row lg:flex-wrap">
 
-          <h2 className="text-3xl font-bold text-center mb-8 text-slate-900">
+          <h2 className="text-3xl font-bold mx-0 text-center mb-8 text-slate-900">
             Want to see the results for yourself? Check out these screenshots.
           </h2>
 
@@ -145,12 +160,21 @@ export default function Home() {
 
         <ModalForm />
       </div>
-      <footer className="bg-gray-800 text-gray-300 py-4 px-6 flex justify-between items-center">
-    <div className="flex space-x-4">
-      
-    </div>
-    <div>&copy; 2024 Your Company. All Rights Reserved.</div>
-</footer>
+      <footer className="bg-gray-800 text-gray-300 py-4 px-10 flex justify-between items-center">
+        <div className="flex space-x-4">
+          <SocialIcon url="www.whatsapp.com" href="https://chat.whatsapp.com/HwIOJfwNg8C4LM6luQ5OHk" target="_blank"
+            rel="noreferrer" />
+          <SocialIcon url="www.telegram.com" href="https://t.me/bullruncameroon" target="_blank"
+            rel="noreferrer" />
+          <SocialIcon url="www.instagram.com" target="_blank"
+            rel="noreferrer" />
+          <SocialIcon url="www.facebook.com" target="_blank"
+            rel="noreferrer" />
+          <SocialIcon url="www.x.com" href="https://twitter.com/WainkemD" target="_blank"
+            rel="noreferrer" />
+        </div>
+        <div>&copy; 2024 Digital Life Prince. All Rights Reserved.</div>
+      </footer>
 
     </main>
 
