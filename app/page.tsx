@@ -5,6 +5,7 @@ import ModalForm from "./components/Modal";
 import { SocialIcon } from 'react-social-icons'
 
 
+
 export default function Home() {
 
   const whatYouWillLearn = [
@@ -39,18 +40,19 @@ export default function Home() {
     <main className="flex flex-col justify-between min-h-screen bg-white">
 
       {/* <Button onClick={open}>Open modal</Button> */}
-      <header className="bg-gray-900 text-white py-12">
+      <header className="bg-gray-900 text-white py-12 px-5">
         <div className="container mx-auto text-center">
           <h1 className="text-3xl font-bold mb-2">
             Position to 🔑 Unlock that success in crypto on the day of halving with 100X TO 5000X GEMS
           </h1>
-          <h1 className="text-3xl font-bold mb-4">
+
+          <div className="bg-gradient-to-r from-green-400 to-red-500 text-transparent bg-clip-text text-3xl font-bold">
             NYCE AYUK!
-          </h1>
+          </div>
           <p className="text-lg mb-8">Gain Access to Strategies that Could Skyrocket Your Earnings!</p>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">
+          <a href="#reg" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">
             Explore Now
-          </button>
+          </a>
         </div>
       </header>
 
@@ -138,8 +140,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div id='reg'>
 
-      <ModalForm />
+        <ModalForm />
+      </div>
+
       <a
         href="https://wa.link/vu05u6"
         className="float"
