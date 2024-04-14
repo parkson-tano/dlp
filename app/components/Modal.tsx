@@ -6,11 +6,32 @@ function ModalForm() {
     const [fullName, setFullName] = useState('')
     const [email, setEmail] = useState('')
     const [phoneNumber, setPhoneNumber] = useState('')
+    const [submitted, setSubmitted] = useState(false)
+
+    const handleSubmit = () => {
+        if (email !== "" || phoneNumber !== "") {
+            setSubmitted(true);
+            setEmail("");
+            setFullName("");
+            setPhoneNumber("");
+        } else {
+            alert("Please enter a phone number or an email address.");
+        }
+    }
+
     return (
         <MantineProvider>
             <section className="flex justify-center py-5  mb-5 items-center bg-gray-200">
                 <div className="max-w-lg w-full px-6 py-10 bg-white rounded-lg shadow-md">
                     <h2 className="text-2xl font-bold mb-4 text-center text-slate-900">Register for the Event</h2>
+                    {
+    submitted && (
+        <p className="text-2xl font-bold mb-4 text-slate-900">
+            Congratulations! You're officially registered. Keep an eye on your inbox for the meeting link—it's on its way!
+        </p>
+    )
+}
+
                     <form className="space-y-4">
                         <div>
                             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
@@ -57,15 +78,12 @@ function ModalForm() {
 
                         </div>
 
-                        <Button
-                            loading loaderProps={{ type: 'dots' }}
-                            fullWidth
-                            variant="gradient"
-                            gradient={{ from: 'green', to: 'red', deg: 90 }}
-                            className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        <button
+                        onClick={handleSubmit}
+                            className="w-full bg-gradient-to-r from-green-400 to-red-500  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                         >
                             Register
-                        </Button>
+                        </button>
                     </form>
                 </div>
             </section>
