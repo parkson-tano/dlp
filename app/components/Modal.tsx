@@ -2,22 +2,53 @@
 import React, { useState } from "react";
 import { Button } from "@mantine/core";
 import { MantineProvider } from "@mantine/core";
+import axios from "axios";
+
 function ModalForm() {
     const [fullName, setFullName] = useState('')
     const [email, setEmail] = useState('')
     const [phoneNumber, setPhoneNumber] = useState('')
     const [submitted, setSubmitted] = useState(false)
+    const BASE_URL = 'https://tano.pythonanywhere.com/send_email/'
+
+
+    interface ApiResponse {
+        // Define the structure of your API response here
+        // For example:
+        status: string;
+        data: any; // Adjust the data type according to your API response structure
+    
+    }
 
     const handleSubmit = () => {
         if (email !== "" || phoneNumber !== "") {
-            setSubmitted(true);
-            setEmail("");
-            setFullName("");
-            setPhoneNumber("");
+            axios.post(BASE_URL, {
+                full_name: fullName,
+                email: email,
+                phone: phoneNumber
+            })
+            .then((response) => {
+                console.log(response);
+                // Display a confirmation message to the user
+                alert("You have successfully registered for the event!");
+                // Reset form fields and state
+                setSubmitted(true);
+                setEmail("");
+                setFullName("");
+                setPhoneNumber("");
+            })
+            .catch((error) => {
+                // Display an error message to the user
+                alert("Failed to register for the event. Please try again later.");
+                console.error("Error:", error.response);
+            });
         } else {
+            // Prompt the user to enter either email or phone number
             alert("Please enter a phone number or an email address.");
         }
     }
+    
+
 
     return (
         <MantineProvider>
