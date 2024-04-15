@@ -1,12 +1,18 @@
 // import React from "react"
 'use client'
 import Image from "next/image";
+import React, { useState, useEffect } from 'react'
 import ModalForm from "./components/Modal";
 import { SocialIcon } from 'react-social-icons'
 
 
 
 export default function Home() {
+  const [countdownDate, setCountdownDate] = useState(new Date('Apr 19, 2024 20:30:00').getTime());
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
 
   const whatYouWillLearn = [
     {
@@ -34,6 +40,28 @@ export default function Home() {
       description: 'Understand the importance of risk management in cryptocurrency trading and how to mitigate potential losses.'
     }
   ];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const now = new
+
+        Date().getTime();
+      const
+
+        distance = countdownDate - now;
+
+      setDays(Math.floor(distance / (1000 * 60 * 60 * 24)));
+      setHours(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+      setMinutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
+      setSeconds(Math.floor((distance % (1000 * 60)) / 1000));
+
+      if (distance < 0) {
+        clearInterval(intervalId);
+      }
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, [countdownDate]);
 
   return (
 
@@ -66,7 +94,25 @@ export default function Home() {
           priority
         />
       </section>
-
+      <div className="text-center mt-3">
+        <h1 className="text-3xl font-extrabold text-gray-900 animate-pulse">We are counting down</h1>
+      </div>
+      <div className="py-4 px-6 mb-10 bg-gradient-to-r from-blue-400 to-red-500">
+        <div className="flex flex-wrap gap-2 justify-center items-center">
+          <div className="border rounded-lg px-4 py-2">
+            <div id="days" className="font-bold font-mono text-3xl text-gray-800 ">{days}d</div>
+          </div>
+          <div className="border rounded-lg px-4 py-2">
+            <div id="hours" className="font-bold font-mono text-3xl text-gray-800">{hours}h</div>
+          </div>
+          <div className="border rounded-lg px-4 py-2">
+            <div id="minutes" className="font-bold font-mono text-3xl text-gray-800">{minutes}m</div>
+          </div>
+          <div className="border rounded-lg px-4 py-2">
+            <div id="seconds" className="font-bold font-mono text-3xl text-gray-800">{seconds}s</div>
+          </div>
+        </div>
+      </div>
       <section className="bg-gray-100 px-5 mb-5 text-slate-900">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8">What You Will Learn</h2>
