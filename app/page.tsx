@@ -113,7 +113,7 @@ export default function Home() {
           <Image
             className="relative rounded-10"
             src="/crypto_course.jpeg"
-            alt="Next.js Logo"
+            alt="nyce ayuk post bitcoin halving"
             width={1000}
             height={800}
             priority
@@ -192,8 +192,8 @@ export default function Home() {
             <div className="w-full lg:w-1/2 px-3 mb-3 lg:mb-0">
               <Image
                 className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                src="/prove1.avif"
-                alt="Next.js Logo"
+                src="/Picture 1.png"
+                alt="nyce ayuk post bitcoin halving"
                 width={800}
                 height={800}
               />
@@ -201,8 +201,8 @@ export default function Home() {
             <div className="w-full lg:w-1/2 px-3 mb-3 lg:mb-0">
               <Image
                 className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                src="/prove2.avif"
-                alt="Next.js Logo"
+                src="/Picture 2.png"
+                alt="nyce ayuk post bitcoin halving"
                 width={800}
                 height={800}
               />
@@ -210,8 +210,8 @@ export default function Home() {
             <div className="w-full lg:w-1/2 px-3 mb-3 lg:mb-0">
               <Image
                 className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                src="/prove3.avif"
-                alt="Next.js Logo"
+                src="/Picture 3.png"
+                alt="nyce ayuk post bitcoin halving"
                 width={800}
                 height={800}
               />
@@ -219,8 +219,26 @@ export default function Home() {
             <div className="w-full lg:w-1/2 px-3 mb-3 lg:mb-0">
               <Image
                 className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                src="/prove4.avif"
-                alt="Next.js Logo"
+                src="/Picture 4.png"
+                alt="nyce ayuk post bitcoin halving"
+                width={800}
+                height={800}
+              />
+            </div>
+            <div className="w-full lg:w-1/2 px-3 mb-3 lg:mb-0">
+              <Image
+                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                src="/Picture 5.png"
+                alt="nyce ayuk post bitcoin halving"
+                width={800}
+                height={800}
+              />
+            </div>
+            <div className="w-full lg:w-1/2 px-3 mb-3 lg:mb-0">
+              <Image
+                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                src="/Picture 6.png"
+                alt="nyce ayuk post bitcoin halving"
                 width={800}
                 height={800}
               />
