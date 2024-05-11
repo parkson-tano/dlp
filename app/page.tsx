@@ -82,6 +82,7 @@ export default function Home() {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
+        <link rel="icon" href="/favicon.ico?v=2" />
         {/* Open Graph tags */}
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
