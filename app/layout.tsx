@@ -16,7 +16,7 @@ export interface Metadata {
 export const metadata: Metadata = {
   title: "Digital Life Prince",
   description: "Get ready for the next bull run",
-  image: "https://example.com/og-image.jpg", // Replace with your image URL
+  image: "/crypto_course.jpeg", // Replace with your image URL
 };
 
 
