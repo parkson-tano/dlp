@@ -95,7 +95,7 @@ export default function Home() {
         <header className="bg-gray-900 text-white py-12 px-5">
           <div className="container mx-auto text-center">
             <h1 className="text-3xl font-bold mb-2">
-              Position to 🔑 Unlock that success in crypto on the day of halving with 100X TO 5000X GEMS
+              Post Bitcoin Halving + Incoming Bull Run - Positioning Workshop
             </h1>
 
             <h1 className="text-red-300 bg-clip-text text-3xl font-bold ">
