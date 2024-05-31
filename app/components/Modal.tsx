@@ -9,6 +9,7 @@ function ModalForm() {
     const [email, setEmail] = useState('')
     const [phoneNumber, setPhoneNumber] = useState('')
     const [submitted, setSubmitted] = useState(false)
+    const [refer, setRefe] = useState('')
     const BASE_URL = 'https://tano.pythonanywhere.com/send_email/'
 
 
@@ -25,7 +26,8 @@ function ModalForm() {
             axios.post(BASE_URL, {
                 full_name: fullName,
                 email: email,
-                phone: phoneNumber
+                phone: phoneNumber,
+                ref: refe
             })
             .then((response) => {
                 console.log(response);
@@ -39,7 +41,7 @@ function ModalForm() {
             })
             .catch((error) => {
                 // Display an error message to the user
-                alert("Failed to register for the event. Please try again later.");
+                alert(error.response.error);
                 console.error("Error:", error.response);
             });
         } else {
@@ -107,6 +109,21 @@ function ModalForm() {
                                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             />
 
+                        </div>
+                           <div>
+                            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+                                Who Referred You?
+                            </label>
+                            <input
+                                value={refe}
+                                onChange={(e) => setRefe(e.target.value)}
+                                type="text"
+                                id="name"
+                                name="name"
+                                required = {true}
+                                placeholder="Enter your name who referred you"
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            />
                         </div>
 
                         <button
