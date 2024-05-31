@@ -9,7 +9,7 @@ function ModalForm() {
     const [email, setEmail] = useState('')
     const [phoneNumber, setPhoneNumber] = useState('')
     const [submitted, setSubmitted] = useState(false)
-    const [refer, setRefe] = useState('')
+    const [refer, setRefer] = useState('')
     const BASE_URL = 'https://tano.pythonanywhere.com/send_email/'
 
 
@@ -27,7 +27,7 @@ function ModalForm() {
                 full_name: fullName,
                 email: email,
                 phone: phoneNumber,
-                ref: refe
+                refer: refer
             })
             .then((response) => {
                 console.log(response);
@@ -103,8 +103,8 @@ function ModalForm() {
                                 value={phoneNumber}
                                 onChange={(e) => setPhoneNumber(e.target.value)}
                                 type="tel"
-                                id="phone"
-                                name="phone"
+                                id="refer"
+                                name="refer"
                                 placeholder="Enter your phone number"
                                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             />
@@ -115,8 +115,8 @@ function ModalForm() {
                                 Who Referred You?
                             </label>
                             <input
-                                value={refe}
-                                onChange={(e) => setRefe(e.target.value)}
+                                value={refer}
+                                onChange={(e) => setRefer(e.target.value)}
                                 type="text"
                                 id="name"
                                 name="name"
