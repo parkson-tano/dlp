@@ -22,7 +22,7 @@ function ModalForm() {
     }
 
     const handleSubmit = () => {
-        if (email !== "" || phoneNumber !== "") {
+        if (email !== "" || phoneNumber !== "" || refer !== "") {
             axios.post(BASE_URL, {
                 full_name: fullName,
                 email: email,
@@ -38,15 +38,16 @@ function ModalForm() {
                 setEmail("");
                 setFullName("");
                 setPhoneNumber("");
+                setRefer("");
             })
             .catch((error) => {
                 // Display an error message to the user
-                alert(error.response.error);
-                console.error("Error:", error.response);
+                alert("You Already Registered for this event");
+                console.error("Error:", error);
             });
         } else {
             // Prompt the user to enter either email or phone number
-            alert("Please enter a phone number or an email address.");
+            alert("Please enter a phone number or an email address or referral ");
         }
     }
     
