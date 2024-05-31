@@ -104,8 +104,8 @@ function ModalForm() {
                                 value={phoneNumber}
                                 onChange={(e) => setPhoneNumber(e.target.value)}
                                 type="tel"
-                                id="refer"
-                                name="refer"
+                                id="phone"
+                                name="phone"
                                 placeholder="Enter your phone number"
                                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             />
@@ -119,9 +119,8 @@ function ModalForm() {
                                 value={refer}
                                 onChange={(e) => setRefer(e.target.value)}
                                 type="text"
-                                id="name"
-                                name="name"
-                                required = {true}
+                                id="refer"
+                                name="refer"
                                 placeholder="Enter your name who referred you"
                                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             />
