@@ -9,7 +9,7 @@ import Head from 'next/head';
 
 
 export default function Home() {
-  const [countdownDate, setCountdownDate] = useState(new Date('Jun 8, 2024 19:00:00').getTime());
+  const [countdownDate, setCountdownDate] = useState(new Date('Jun 8, 2024 20:00:00').getTime());
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
