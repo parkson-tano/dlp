@@ -9,7 +9,7 @@ import Head from 'next/head';
 
 
 export default function Home() {
-  const [countdownDate, setCountdownDate] = useState(new Date('Jun 8, 2024 20:00:00').getTime());
+  const [countdownDate, setCountdownDate] = useState(new Date('Feb 15, 2025 20:00:00').getTime());
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -25,35 +25,35 @@ export default function Home() {
   const metadata: Metadata = {
     title: "Digital Life Prince",
     description: "Get ready for the next bull run",
-    image: "/crypto_course.jpeg", // Replace with your image URL
+    image: "/crypto_course.jpg", // Replace with your image URL
   };
 
-  const whatYouWillLearn = [
-    {
-      title: "Deep Fundamentals",
-      description: "Gain a comprehensive understanding of cryptocurrency fundamentals, including blockchain technology, history, and financial implications.",
-    },
-    {
-      title: "Identifying Promising Coins",
-      description: "Learn strategies for identifying cryptocurrencies with strong growth potential based on factors like technology, team, and market demand.",
-    },
-    {
-      title: "Mastering Entry and Exit Points",
-      description: "Understand how to identify optimal entry and exit points for trades using technical analysis techniques and indicators.",
-    },
-    {
-      title: "Discovering Gems",
-      description: "Explore emerging cryptocurrencies with disruptive technologies and strong fundamentals that have the potential to outperform popular assets.",
-    },
-    {
-      title: 'Trading Strategies',
-      description: 'Learn various trading strategies used in cryptocurrency markets, from day trading to long-term investing.'
-    },
-    {
-      title: 'Risk Management',
-      description: 'Understand the importance of risk management in cryptocurrency trading and how to mitigate potential losses.'
-    }
-  ];
+  // const whatYouWillLearn = [
+  //   {
+  //     title: "Deep Fundamentals",
+  //     description: "Gain a comprehensive understanding of cryptocurrency fundamentals, including blockchain technology, history, and financial implications.",
+  //   },
+  //   {
+  //     title: "Identifying Promising Coins",
+  //     description: "Learn strategies for identifying cryptocurrencies with strong growth potential based on factors like technology, team, and market demand.",
+  //   },
+  //   {
+  //     title: "Mastering Entry and Exit Points",
+  //     description: "Understand how to identify optimal entry and exit points for trades using technical analysis techniques and indicators.",
+  //   },
+  //   {
+  //     title: "Discovering Gems",
+  //     description: "Explore emerging cryptocurrencies with disruptive technologies and strong fundamentals that have the potential to outperform popular assets.",
+  //   },
+  //   {
+  //     title: 'Trading Strategies',
+  //     description: 'Learn various trading strategies used in cryptocurrency markets, from day trading to long-term investing.'
+  //   },
+  //   {
+  //     title: 'Risk Management',
+  //     description: 'Understand the importance of risk management in cryptocurrency trading and how to mitigate potential losses.'
+  //   }
+  // ];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -96,15 +96,15 @@ export default function Home() {
         <header className="bg-gray-900 text-white py-12 px-5">
           <div className="container mx-auto text-center">
             <h1 className="text-3xl font-bold mb-2">
-              Post Bitcoin Halving + Incoming Bull Run - Positioning Workshop
+              First Class Inner Circle - 2025
             </h1>
 
             <h1 className="text-red-300 bg-clip-text text-3xl font-bold ">
-              NYCE AYUK!
+              Get ready For The Bull Run
             </h1>
-            <p className="text-lg mb-8">Gain Access to Strategies that Could Skyrocket Your Earnings!</p>
+            <p className="text-lg mb-8"> Start Your Crypto Journey with Us!</p>
             <a href="#reg" className="bg-gradient-to-r from-blue-400 to-red-500  hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">
-              Explore Now
+              Join Now
             </a>
           </div>
         </header>
@@ -112,8 +112,8 @@ export default function Home() {
         <section className="bg-gray-100 py-5 flex justify-center items-center">
           <Image
             className="relative rounded-10"
-            src="/crypto_course.jpeg"
-            alt="nyce ayuk post bitcoin halving"
+            src="/crypto_course.jpg"
+            alt="Preparing for the bull run"
             width={1000}
             height={800}
             priority
@@ -138,7 +138,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <section className="bg-gray-100 px-5 mb-5 text-slate-900">
+        {/* <section className="bg-gray-100 px-5 mb-5 text-slate-900">
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold text-center mb-8">What You Will Learn</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -157,7 +157,7 @@ export default function Home() {
 
             </div>
           </div>
-        </section>
+        </section> */}
         {/* <p className="text-2xl font-bold text-center mb-8 text-slate-900">
           Find us on
           </p>
@@ -173,6 +173,10 @@ export default function Home() {
           <SocialIcon url="www.x.com" href="https://twitter.com/WainkemD" target="_blank"
             rel="noreferrer" />
         </div> */}
+        <div id='reg'>
+
+          <ModalForm />
+        </div>
         <div className="telegram-icon">
           <SocialIcon url="www.telegram.com" href="https://t.me/bullruncameroon" target="_blank"
             rel="noreferrer" />
@@ -189,66 +193,48 @@ export default function Home() {
               Want to see the results for yourself? Check out these screenshots.
             </h2>
 
-            <div className="w-full lg:w-1/2 px-3 mb-3 lg:mb-0">
-              <Image
-                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                src="/Picture 1.png"
-                alt="nyce ayuk post bitcoin halving"
-                width={800}
-                height={800}
-              />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
+                <div className="w-full px-3 mb-3">
+                    <Image
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                        src="/Picture 1.jpg"
+                        alt="Preparing for the bull run"
+                        width={800}
+                        height={800}
+                    />
+                </div>
+                <div className="w-full px-3 mb-3">
+                    <Image
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                        src="/Picture 2.jpg"
+                        alt="Preparing for the bull run"
+                        width={800}
+                        height={800}
+                    />
+                </div>
+                <div className="w-full px-3 mb-3">
+                    <Image
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                        src="/Picture 3.jpg"
+                        alt="Preparing for the bull run"
+                        width={800}
+                        height={800}
+                    />
+                </div>
+                <div className="w-full px-3 mb-3">
+                    <Image
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                        src="/Picture 4.jpg"
+                        alt="Preparing for the bull run"
+                        width={800}
+                        height={800}
+                    />
+                </div>
             </div>
-            <div className="w-full lg:w-1/2 px-3 mb-3 lg:mb-0">
-              <Image
-                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                src="/Picture 2.png"
-                alt="nyce ayuk post bitcoin halving"
-                width={800}
-                height={800}
-              />
-            </div>
-            <div className="w-full lg:w-1/2 px-3 mb-3 lg:mb-0">
-              <Image
-                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                src="/Picture 3.png"
-                alt="nyce ayuk post bitcoin halving"
-                width={800}
-                height={800}
-              />
-            </div>
-            <div className="w-full lg:w-1/2 px-3 mb-3 lg:mb-0">
-              <Image
-                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                src="/Picture 4.png"
-                alt="nyce ayuk post bitcoin halving"
-                width={800}
-                height={800}
-              />
-            </div>
-            <div className="w-full lg:w-1/2 px-3 mb-3 lg:mb-0">
-              <Image
-                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                src="/Picture 5.png"
-                alt="nyce ayuk post bitcoin halving"
-                width={800}
-                height={800}
-              />
-            </div>
-            <div className="w-full lg:w-1/2 px-3 mb-3 lg:mb-0">
-              <Image
-                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                src="/Picture 6.png"
-                alt="nyce ayuk post bitcoin halving"
-                width={800}
-                height={800}
-              />
-            </div>
+
           </div>
         </div>
-        <div id='reg'>
-
-          <ModalForm />
-        </div>
+  
         <footer className="bg-gray-800 text-gray-300 py-4 px-10 flex justify-between items-center">
           {/* <div className="flex space-x-4">
           <SocialIcon url="www.whatsapp.com" href="https://chat.whatsapp.com/HwIOJfwNg8C4LM6luQ5OHk" target="_blank"
