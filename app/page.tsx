@@ -248,7 +248,7 @@ export default function Home() {
           <SocialIcon url="www.x.com" href="https://twitter.com/WainkemD" target="_blank"
             rel="noreferrer" />
         </div> */}
-          <div>&copy; 2024 Digital Life Prince. All Rights Reserved.</div>
+          <div>&copy; 2025 Digital Life Prince. All Rights Reserved.</div>
         </footer>
 
       </main>
