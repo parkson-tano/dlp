@@ -196,7 +196,7 @@ function ModalForm() {
 
                     {showAccountDetails && (
                         <div>
-                            <label className="block text-2xl text-black font-bold mb-2">Account Details</label>
+                            <label className="block text-2xl text-black font-bold mb-2">Account Details (tap or click to copy)</label>
                             <p className="block text-gray-900 text-md font-semibold mb-2">Crypto (USDT): <span className="text-blue-500 cursor-pointer" onClick={() => copyToClipboard('TDpRTFU1JhHBd4RGeTprwSQwumgRwXjoXE')}>TDpRTFU1JhHBd4RGeTprwSQwumgRwXjoXE</span></p>
                             <p className="block text-gray-900 text-md font-semibold mb-2">Bank Account (Opay): <span className="text-blue-500 cursor-pointer" onClick={() => copyToClipboard('8077459024')}>8077459024 - PRINCE DESTINY CHIBUEZ</span></p>
                             <p className="block text-gray-900 text-md font-semibold mb-2">Mobile Money (MTN Cameroon): <span className="text-blue-500 cursor-pointer" onClick={() => copyToClipboard('671959493')}>671959493</span></p>
