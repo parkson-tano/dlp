@@ -35,7 +35,7 @@ function ModalForm() {
 
             axios.post(BASE_URL, registrationData)
                 .then(response => {
-                    alert("You have successfully registered for the event!");
+                    alert("You have successfully join, please proceed to payment!");
                     setSubmitted(true);
                     setShowAccountDetails(true);
                     setShowForm(false);
@@ -187,7 +187,7 @@ function ModalForm() {
                                 onClick={handleSubmit}
                                 className="w-full bg-gradient-to-r from-green-400 to-red-500  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                             >
-                                Register
+                                Join Now
                             </button>
                         </div>
                     )}
